@@ -7,42 +7,38 @@
 </head>
 <body>
     <script>
-switch(Friday)
-        {
-            case 1:
-                if(Friday==Friday)
-                {
-                document.write(Sunday);
-                }
-            break;
+let day = new Date().getDay();
+let dayName;
 
-            case 2:
-                document.write(Monday);
-                
-            break;
+switch (day) {
+  case 0:
+    dayName = "Sunday";
+    break;
+  case 1:
+    dayName = "Monday";
+    break;
+  case 2:
+    dayName = "Tuesday";
+    break;
+  case 3:
+    dayName = "Wednesday";
+    break;
+  case 4:
+    dayName = "Thursday";
+    break;
+  case 5:
+    dayName = "Friday";
+    break;
+  case 6:
+    dayName = "Saturday";
+    break;
+  default:
+    dayName = "Unknown";
+    break;
+}
 
-            case 3: 
-                documen.write(Tuesday);
-            break;
+console.log("Today is " + dayName);
 
-            case 4: 
-                document.write(Wednesday);
-            break;
-
-            case 5:
-                document.write(Thursday);
-            break;
-
-            case 6:
-                document.write(Friday);
-            break;
-
-            case 7:
-                document.write(Saturday);
-            break;
-
-            default:"No Holidays"
-        }
 
         //arrays in javascript
 
