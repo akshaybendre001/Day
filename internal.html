@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Javascript</title>
+</head>
+<body>
+    <p id="internal"></p>
+    <p id="nos"></p>
+    <script>
+        console.log("Welcome to Javascript");
+        x = 5;
+        y = 6;
+        z = x + y;
+        document.getElementById("internal").innerHTML = "The value of z is:" +z;
+
+        // let carName="Volvo";
+        // let carName;
+
+        // const carName="BMW";    // These re-declarations do not work in javascript..
+        // const carName;
+
+        // var carName="Audi";
+        // var carName;
+
+        let X = "5" + 2 + 3;    //if the number is declared in string the rest of the nos will also be declared in strings
+         document.getElementById("nos").innerHTML = X;
+
+
+         var num1 = 55;
+         var num2 = 101;
+
+         console.log("The value of num1 + num2 is:" +(num1 + num2));
+         console.log("The value of num1 - num2 is:" +(num1 - num2));
+         console.log("The value of num1 * num2 is:" +(num1 * num2));
+         console.log("The value of num1 / num2 is:" +(num1 / num2));
+
+         console.log("The value of num1++ is:" +(num1++));
+         console.log("The value of ++num1 is:" +(++num1));
+
+         console.log("The value of num2-- is:" +(num2--));
+         console.log("The value of --num2 is:" +(--num2));
+
+        //  Boolean Datatype
+        let a = 10;
+        let b = 10;
+        let c = 20;
+        p = (a==b);
+        q = (b==c);
+
+        console.log(p);
+        console.log(q);
+
+        //if else statements
+
+
+        if(a==20)
+        {
+            document.write("This is true..")
+        }
+        else if(a==10)
+        {
+            document.write("This is right..")
+
+        }
+        else{
+            document.write("None of the conditions matched..")
+        }
+
+        
+    </script>
+    
+</body>
+</html>
